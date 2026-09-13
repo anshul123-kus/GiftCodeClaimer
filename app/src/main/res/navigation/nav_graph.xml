@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.giftclaimer.app.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/sitesFragment"
+        android:name="com.giftclaimer.app.ui.sites.SitesFragment"
+        android:label="@string/title_sites"
+        tools:layout="@layout/fragment_sites" />
+
+    <fragment
+        android:id="@+id/profilesFragment"
+        android:name="com.giftclaimer.app.ui.profiles.ProfilesFragment"
+        android:label="@string/title_profiles"
+        tools:layout="@layout/fragment_profiles" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.giftclaimer.app.ui.settings.SettingsFragment"
+        android:label="@string/title_settings" />
+
+</navigation>

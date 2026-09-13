@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListPreference
+        app:key="pref_check_interval"
+        app:title="Clipboard Check Interval"
+        app:summary="How often to check clipboard"
+        app:entries="@array/interval_labels"
+        app:entryValues="@array/interval_values"
+        app:defaultValue="500" />
+
+    <SwitchPreferenceCompat
+        app:key="pref_auto_start"
+        app:title="Auto Start on Boot"
+        app:summary="Automatically start monitoring when phone boots"
+        app:defaultValue="false" />
+
+    <SwitchPreferenceCompat
+        app:key="pref_sound_on_success"
+        app:title="Sound on Success"
+        app:summary="Play sound when code is successfully claimed"
+        app:defaultValue="true" />
+
+    <SwitchPreferenceCompat
+        app:key="pref_vibrate_on_success"
+        app:title="Vibrate on Success"
+        app:summary="Vibrate when code is successfully claimed"
+        app:defaultValue="true" />
+
+    <Preference
+        app:key="pref_clear_logs"
+        app:title="Clear All Logs"
+        app:summary="Delete all claim history" />
+
+    <Preference
+        app:key="pref_about"
+        app:title="About"
+        app:selectable="false" />
+
+</PreferenceScreen>
